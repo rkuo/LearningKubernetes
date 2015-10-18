@@ -1,7 +1,7 @@
 # LearningKubernetes
 
 ## There are two leaning files:
-* one is based on this directory:file name = learningKubernetesOnGcloud.md
-* the other one is base on /Users/rkuo/code/coreos-kubernetes/single-node, filename = learningKubernetesOnCoreOS-SingleNodes.md
+* learningKubernetesOnGcloud.md is based on this directory.
+* learningKubernetesOnCoreOS-SingleNodes.md is base on /Users/rkuo/code/coreos-kubernetes/single-node.
 
-Gcloud version works, single node version uses Vagrant, but does not work.
+Gcloud version works, single node version uses Vagrant, but it does not work.
