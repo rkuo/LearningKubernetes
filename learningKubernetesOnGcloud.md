@@ -40,6 +40,10 @@ optional flags:
   * `gcloud init`
   we need to enable the billing of the account.
   
+  * signin account at [console][3] to ensure the project exist
+  
+  [3]: https://console.developers.google.com/project/trykubernetes-1 
+  
 ## create a cluster
 
 ```
@@ -148,7 +152,7 @@ NAME                 READY     STATUS    RESTARTS   AGE
 redis-master-7oniw   0/1       Running   0          9s
 ➜  kubernetes-gcloud
 ```
-#### container info
+#### pods info
 
 ```
 ➜  kubernetes-gcloud  kubectl get pods -l name=redis-master -o wide
@@ -164,7 +168,7 @@ WARNING: [/usr/bin/ssh-keygen] will be executed to generate a key.
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /Users/rkuo/.ssh/google_compute_engine.
+Your identificationtion has been saved in /Users/rkuo/.ssh/google_compute_engine.
 Your public key has been saved in /Users/rkuo/.ssh/google_compute_engine.pub.
 The key fingerprint is:
 ...
@@ -548,6 +552,11 @@ redis-slave-dv0x4    1/1       Running   0          3h
 * When you're done with your cluster, you can shut it down:
 
 `gcloud container clusters delete guestbook`
+
+
+[1]: https://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/gce.md
+[2]: https://cloud.google.com/container-engine/docs/tutorials/guestbook
+
 
 
 
